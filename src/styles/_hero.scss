@@ -1,0 +1,97 @@
+@use 'variaveis';
+
+.hero{
+    position: relative;
+    width: 100%;
+
+    &__content{
+        margin-bottom: 300px;
+        &__branding img{
+            width: 100%;
+            min-height: 80vh;
+        }
+    }
+
+    &__text{
+        margin: 0 44px;
+        margin-top: -55%;
+        color: variaveis.$corPadrao;
+
+        &__img{
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+        &__normal{
+            margin-bottom: 32px;
+            font-size: 2.7em;
+        }
+        &__small{
+            margin-bottom: 32px;
+            color: variaveis.$corTextSmallH3;
+        }
+        &__p{
+            margin-bottom: 32px;
+            max-width: 600px;
+        }
+
+        &__links{
+            margin-left: 0px 44px;
+            margin-bottom: 64px;
+            
+            &__a{
+                display: inline;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px 8px;
+                color: variaveis.$corPadrao;
+
+                &__under{
+                    display: inline;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0px 8px;
+                    text-decoration: underline;
+                    color: variaveis.$corPadrao;
+
+                    &:hover{
+                        color: variaveis.$corHeroTextLinks;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    &__links{
+        display: flex;
+        margin-left: 40px;
+        align-items: center;
+
+        &__item{
+            padding: 8px 18px;
+            margin: 0px 16px;
+
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: variaveis.$corButtonRadius;
+            background: variaveis.$corButtonOutlineColor;
+    
+            display: block;
+            box-sizing: border-box;
+            border: 2px solid variaveis.$corButtonOutlineColor;
+            padding: 8px;
+            background: variaveis.$corButtonColor;
+            color: variaveis.$corButtonOutlineColor;
+            transform: translateY(-0.2em);
+            transition: transform 0.1s ease;
+
+            &:hover{
+                transform: translateY(-0.33em);
+                background-color: variaveis.$corPadrao;
+                color: variaveis.$corNav;
+            }
+        }
+    }
+}

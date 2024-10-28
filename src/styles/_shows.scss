@@ -1,0 +1,60 @@
+@use 'variaveis';
+
+.shows{
+    background-color: variaveis.$corNav;
+    padding: 2vw 5.6vw;
+
+    &__list{
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        &__is-active{
+            display: grid;
+        }
+
+        &__item{
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            list-style: none;
+            text-decoration: none;
+
+            &:hover{
+                transform: translateY(-0.33em);
+            }
+        }
+        }
+
+        &__tabs{
+            display: flex;
+            align-items: center;
+            &__button{
+                color: variaveis.$corPadrao;
+                font-size: 20px;
+                padding-bottom: 5px;
+                background: none;
+                margin: 0 1vw;
+                font-size: 17px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                border-radius: variaveis.$corButtonRadius;
+                background: variaveis.$corButtonOutlineColor;
+                display: block;
+                box-sizing: border-box;
+                border: 2px solid variaveis.$corButtonOutlineColor;
+                background: variaveis.$corPadrao; 
+                padding: 8px;
+                color: variaveis.$corNav;
+                transform: translateY(-0.2em);
+                transition: transform 0.1s ease;
+  
+                &:hover {
+                    transform: translateY(-0.33em);
+                    background: variaveis.$corButtonColor;
+                    color: variaveis.$corButtonOutlineColor;
+                }
+            }
+        }
+    }
