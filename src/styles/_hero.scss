@@ -12,11 +12,12 @@
         }
     }
 
+    
     &__text{
         margin: 0 44px;
         margin-top: -55%;
         color: variaveis.$corPadrao;
-
+        
         &__img{
             margin-top: 8px;
             margin-bottom: 32px;
@@ -33,7 +34,7 @@
             margin-bottom: 32px;
             max-width: 600px;
         }
-
+        
         &__links{
             margin-left: 0px 44px;
             margin-bottom: 64px;
@@ -44,7 +45,7 @@
                 align-items: center;
                 margin: 0px 8px;
                 color: variaveis.$corPadrao;
-
+                
                 &__under{
                     display: inline;
                     justify-content: space-between;
@@ -52,7 +53,7 @@
                     margin: 0px 8px;
                     text-decoration: underline;
                     color: variaveis.$corPadrao;
-
+                    
                     &:hover{
                         color: variaveis.$corHeroTextLinks;
                         cursor: pointer;
@@ -70,7 +71,7 @@
         &__item{
             padding: 8px 18px;
             margin: 0px 16px;
-
+            
             font-size: 17px;
             font-weight: bold;
             border: none;
@@ -86,7 +87,7 @@
             color: variaveis.$corButtonOutlineColor;
             transform: translateY(-0.2em);
             transition: transform 0.1s ease;
-
+            
             &:hover{
                 transform: translateY(-0.33em);
                 background-color: variaveis.$corPadrao;
@@ -94,4 +95,42 @@
             }
         }
     }
+@media (max-width: 767px){
+    &__content{
+    &__branding{
+        img{
+        width: 100%;
+        min-height: 30vh;
+        object-fit: cover;
+        }
+    }
+}
+&__links{
+flex-direction: column;
+margin: 0 32px;
+padding: 0 70px;
+gap: 15px;
+    &__item{
+    padding-bottom: 8px;
+        span{
+            padding-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    &__content{
+    &__branding{
+        img{
+            width: 100%;
+            min-height: 50vh;
+            object-fit: cover;
+        }
+    }
+    }
+    &__links{
+        padding-top: 5%;
+    }
+}
 }

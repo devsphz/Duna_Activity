@@ -57,4 +57,31 @@
                 }
             }
         }
+
+@media (max-width: 767px){
+.shows{
+    &__tabs{
+            margin-top: -40%;
     }
+    &__list{
+    display: flex;
+    flex-direction: column;
+        &__item{
+            img{
+                display: flex;
+                margin: -20%;
+                padding: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .shows{
+        &__tabs{
+            margin-top: -20%;
+        }
+    }
+}
+}
