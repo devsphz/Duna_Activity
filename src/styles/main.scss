@@ -3,6 +3,8 @@
 @use 'hero';
 @use 'shows';
 @use 'footer';
+// Sass do Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 *{
     margin: 0;
